@@ -1,44 +1,73 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .box {
-    width: 50px;
-    height: 50px;
-    margin: 5px;
-    background-color: #f2f2f2;
-    border: 1px solid #ccc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
 }
-
-
 
 /* Todo 2.1: Define and apply CSS styles such that the background of .change-styles changes to
 a different color when the screen is smaller than 500px*/
-.change-styles{
+.change-styles {
+  width: 100%;
+  height: 300px;
+  background-color: blue;
+}
+@media screen and (max-width: 500px) {
+  .change-styles {
     width: 100%;
     height: 300px;
-    background-color: red;
+    background-color: yellow;
+  }
 }
-
 /* Todo 2.2: Define and apply CSS styles such that the layout of .change-layout becomes a column
 when the screen's width is smaller than 500px */
-.change-layout{
-    display: flex;
-    flex-direction: row;
+.change-layout {
+  display: flex;
+  flex-direction: row;
 }
-
+@media screen and (max-width: 500px) {
+  .change-layout {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 /* Todo 2.3: Define the common breakpoints for devices - phone, tablet, small screens (laptop), and large screens (desktops).
 For each break point, the background of .common-breakpoints must change
 */
-.common-breakpoints{
-    width: 100%;
-    height: 300px;
-    background-color: blue;
+.common-breakpoints {
+  width: 100%;
+  height: 300px;
+  background-color: blue;
+}
+
+@media only screen and (min-width: 768px) {
+  /*IPAD*/
+  .common-breakpoints {
+    background-color: red;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  /*MOBILE DEVICES*/
+  .common-breakpoints {
+    background-color: green;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .common-breakpoints {
+    background-color: orange;
+  }
 }
