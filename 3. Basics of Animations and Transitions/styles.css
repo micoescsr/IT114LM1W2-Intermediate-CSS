@@ -14,10 +14,10 @@
 /* Todo 3.0: Create an animation that increases and decreases the scale of the box  */
 .todo-0-container .box{
     /* Apply animation here */
-    animation: irene 1000ms ease infinite;
+    animation: ani1 1000ms ease infinite;
 }
 
-@keyframes irene{
+@keyframes ani1{
     0%{
         scale: 100%;
     }
@@ -36,10 +36,10 @@ Start with using "from" and "to". Now use "0%" and "100%" as your key frames.
 Set more key frames between 0% and 100%. */
 .todo-1-container .box{
     /* Apply animation here */
-    animation: seulgi 1500ms infinite;
+    animation: ani2 1500ms infinite;
 }
 
-@keyframes seulgi{
+@keyframes ani2{
    from{
     transform: translateX(0%);
     }
@@ -61,10 +61,10 @@ Set more key frames between 0% and 100%. */
 /* Todo 3.2: Try the different timing funcitons such as linear, ease-in, ease-in-out, cubic-bezier, and steps*/
 .todo-2-container .box{
     /* Apply animation here */
-    animation: wendy 1100ms linear infinite;
+    animation: ani3 1100ms linear infinite;
 }
 
-@keyframes wendy {
+@keyframes ani3{
     0%{
         transform: translateX(0%);
     }
