@@ -52,21 +52,19 @@ For each break point, the background of .common-breakpoints must change
   background-color: blue;
 }
 
-@media only screen and (min-width: 768px) {
-  /*IPAD*/
+@media only screen and (min-width: 768px) {/*IPAD*/
   .common-breakpoints {
     background-color: red;
   }
 }
 
-@media only screen and (min-width: 480px) {
-  /*MOBILE DEVICES*/
+@media only screen and (min-width: 480px) {/*MOBILE DEVICES*/
   .common-breakpoints {
     background-color: green;
   }
 }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1025px) { /*DESKTOP*/
   .common-breakpoints {
     background-color: orange;
   }
